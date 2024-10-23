@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer-box {
+            height: 600px;
+            width: 700px;
+            border-style: groove;
+            border-radius: 5px;
+            position: relative;
+            text-align: left 30px;
+
+
+        }
+
+        .outer-box__border {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            background-color: white;
+            align-items: center;
+            text-align: left 30px;
+
+        }
+
+        * {
+            margin: 10px;
+            left: 450px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container">
+        <div class="outer-box">
+            <div class="outer-box__border">
+                Personal Details
+            </div>
+            <br />
+            <lable>Salutation</lable> <br />
+            <select>
+                <option>--None--</option>
+            </select>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Second Name:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td><input type="radio" name="Gender">Male<input type="radio" name="Gender">Female</td>
+                </tr>
+            </table>
+            <label>Email:</label> <input type="text"> <br />
+            <label>Date of Birth</label> <input type="date"><br />
+            <label>Address:</label> <br />
+            <textarea></textarea><br />
+            <button>Submit</button>
+
+        </div>
+    </nav>
+</body>
+
+</html>
